@@ -1,0 +1,41 @@
+Stack:
+ - FastAPI (JSON)
+ - Docker
+ - Postgres
+
+Models:
+
+Produto
+ - id (PK)
+ - nome String
+ - marca String
+ - valor Float
+ - categoria (FK)
+
+Categorias
+ - id (PK)
+ - nome String
+
+Venda
+ - id (PK)
+ - total float
+ - timestamp datetime
+ - metodo_pagamento enum
+
+item_venda
+ - id (PK)
+ - venda (FK)
+ - produto (FK)
+ - quantidade float
+
+user
+ - id (PK)
+ - nome String
+ - is_admin boolean
+
+
+TODO:
+ - Rotas
+ - Models
+ - Base de dados
+ - Autenticação
