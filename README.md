@@ -2,6 +2,7 @@
 # API de um mercado
 
 
+
 ## Dinâmica da API.
 
 Trata-se de um mercado que vende produtos das seguintes categorias:
@@ -25,3 +26,12 @@ Será preparado um dump de produtos ou um conjunto de requisições para inserç
 **Produto pode ter validade
 
 **Subcategoria
+
+
+## Migrações
+#### Iniciar alembic (Não é mais necessário)
+ - alembic init ./db/migrations
+#### Criar migraçao
+ - alembic revision --autogenerate -m "Create user table"
+#### Aplicar migraçao
+ - alembic upgrade {migration_id}
